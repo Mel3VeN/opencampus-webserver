@@ -12,7 +12,7 @@ phases:
       - unzip -o terraform_1.1.0_linux_amd64.zip -d /usr/local/bin/
       - pip3 install ansible
       - echo Retrieving public IP of the EC2 instance...
-      - export EC2_IP=$(terraform output -raw public_ip)
+      - terraform output -raw public_ip
   build:
     commands:
       - echo "Applying Terraform..."
