@@ -19,4 +19,4 @@ phases:
       - terraform apply -auto-approve
       - echo "Running Ansible..."
       - cd ../ansible
-      - ansible-playbook ansible/playbook.yml
+      - ansible-playbook setup.yml
