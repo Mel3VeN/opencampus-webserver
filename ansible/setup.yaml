@@ -10,6 +10,10 @@
       apt:
         name: apache2
         state: present
+    - name: Copy custom index.html file
+      copy:
+        src: ../index.html
+        dest: /var/www/html/index.html
     - name: Starte Apache
       service:
         name: apache2
