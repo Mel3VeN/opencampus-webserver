@@ -21,4 +21,4 @@ phases:
     commands:
       - echo "Running Ansible..."
       - cd ../ansible
-      - ansible-playbook setup.yaml
+      - ansible-playbook -i 18.184.5.22 setup.yaml
