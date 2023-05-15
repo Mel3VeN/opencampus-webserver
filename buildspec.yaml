@@ -11,7 +11,7 @@ phases:
       - wget https://releases.hashicorp.com/terraform/1.1.0/terraform_1.1.0_linux_amd64.zip
       - unzip -o terraform_1.1.0_linux_amd64.zip -d /usr/local/bin/
       - pip3 install ansible
-  pre-build:
+  pre_build:
     commands:
       - echo "Applying Terraform..."
       - cd terraform
