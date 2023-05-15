@@ -1,6 +1,6 @@
 ---
 - name: Installiere Apache auf dem Webserver
-  hosts: webserver
+  hosts: tag_Name_WebServer
   become: yes
   tasks:
     - name: Aktualisiere APT-Paketliste
